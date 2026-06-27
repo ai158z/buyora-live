@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyora • Minimalist Productivity Kits</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        
+        :root {
+            --primary: #134e4b;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            line-height: 1.05;
+        }
+
+        .section-header {
+            font-size: 2.75rem;
+            line-height: 1.05;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -12px rgb(0 0 0 / 0.1), 0 10px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .nav-scrolled {
+            box-shadow: 0 1px 0 0 #f1e7d2;
+        }
+
+        .calm-gradient {
+            background: linear-gradient(145deg, #f8fafc, #f1e7d2);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+    <!-- NAV -->
+    <nav class="bg-white border-b border-stone-200 sticky top-0 z-50">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="px-8 py-5 flex items-center justify-between">
+                <div class="flex items-center gap-x-3">
+                    <div class="flex items-center gap-x-2">
+                        <div class="w-9 h-9 bg-teal-900 rounded-2xl flex items-center justify-center">
+                            <span class="text-white text-3xl font-bold tracking-tighter">B</span>
+                        </div>
+                        <span class="font-semibold text-3xl tracking-tighter">Buyora</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
+                    <a href="#features" class="hover:text-stone-600 transition-colors">Features</a>
+                    <a href="#pricing" class="hover:text-stone-600 transition-colors">Pricing</a>
+                    <a href="#faq" class="hover:text-stone-600 transition-colors">FAQ</a>
+                </div>
+                
+                <div>
+                    <a href="#waitlist" 
+                       class="px-5 py-2.5 text-sm font-semibold rounded-3xl bg-stone-900 hover:bg-stone-800 transition-colors text-white">
+                        Join waitlist
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="max-w-screen-xl mx-auto px-8 pt-16 pb-20">
+        <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-x-2 bg-white border border-stone-200 px-4 h-9 rounded-3xl text-sm mb-6">
+                <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                <span class="font-medium text-stone-600">Now accepting early members</span>
+            </div>
+            
+            <h1 class="heading-serif text-7xl tracking-tighter leading-none text-balance">
+                Minimalist kits<br>that restore<br>your calm.
+            </h1>
+            
+            <p class="mt-6 text-xl text-stone-600 max-w-md">
+                AI-crafted productivity systems designed specifically for solopreneurs who are tired of feeling overwhelmed.
+            </p>
+            
+            <div class="mt-8 flex items-center gap-x-4">
+                <a href="#waitlist" 
+                   class="inline-flex items-center justify-center px-8 h-14 rounded-3xl bg-teal-900 hover:bg-teal-950 transition-all text-white font-semibold text-lg shadow-sm">
+                    Get early access
+                </a>
+                <a href="#features" 
+                   class="inline-flex items-center justify-center px-6 h-14 text-stone-700 hover:text-stone-900 font-semibold">
+                    See how it works
+                </a>
+            </div>
+            
+            <div class="mt-8 flex items-center gap-x-3 text-sm">
+                <div class="flex -space-x-1">
+                    <div class="w-7 h-7 bg-stone-300 rounded-full border border-white ring-1 ring-stone-200"></div>
+                    <div class="w-7 h-7 bg-stone-400 rounded-full border border-white ring-1 ring-stone-200"></div>
+                    <div class="w-7 h-7 bg-teal-800 rounded-full border border-white ring-1 ring-stone-200"></div>
+                </div>
+                <span class="text-stone-500 text-sm">Joined by 1,842 solopreneurs this month</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div id="features" class="max-w-screen-xl mx-auto px-8 pt-8 pb-20">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Feature 1 -->
+            <div class="bg-white border border-stone-200 rounded-3xl p-7">
+                <div class="w-12 h-12 bg-teal-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-robot text-teal-700 text-2xl"></i>
+                </div>
+                <h3 class="font-semibold text-xl tracking-tight">AI-crafted layouts</h3>
+                <p class="mt-3 text-stone-600">Every kit is generated from your specific workflow, goals, and energy patterns.</p>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="bg-white border border-stone-200 rounded-3xl p-7">
+                <div class="w-12 h-12 bg-amber-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-spa text-amber-700 text-2xl"></i>
+                </div>
+                <h3 class="font-semibold text-xl tracking-tight">Radical minimalism</h3>
+                <p class="mt-3 text-stone-600">Only the essentials. No clutter, no noise. Just beautifully simple systems that work.</p>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="bg-white border border-stone-200 rounded-3xl p-7">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-brain text-sky-700 text-2xl"></i>
+                </div>
+                <h3 class="font-semibold text-xl tracking-tight">Focus restoration</h3>
+                <p class="mt-3 text-stone-600">Built-in rituals and prompts designed to reduce decision fatigue and mental overload.</p>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="bg-white border border-stone-200 rounded-3xl p-7">
+                <div class="w-12 h-12 bg-violet-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-sync text-violet-700 text-2xl"></i>
+                </div>
+                <h3 class="font-semibold text-xl tracking-tight">Evolving with you</h3>
+                <p class="mt-3 text-stone-600">Your kit adapts quarterly based on how your business and energy levels change.</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- PRICING -->
+    <div id="pricing" class="max-w-screen-xl mx-auto px-8 py-16 border-t border-stone-200">
+        <div class="max-w-md mb-10">
+            <h2 class="section-header tracking-tighter">Simple, transparent pricing.</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Starter -->
+            <div class="bg-white border border-stone-200 rounded-3xl p-8">
+                <div>
+                    <span class="font-semibold">Starter Kit</span>
+                </div>
+                <div class="mt-6">
+                    <span class="text-5xl font-semibold tracking-tighter">$49</span>
+                    <span class="text-stone-500">/one-time</span>
+                </div>
+                <div class="mt-7 text-sm text-stone-600">
+                    <div class="flex items-center gap-x-2 mb-2"><i class="fa-solid fa-check text-emerald-600"></i> <span>Core AI productivity templates</span></div>
+                    <div class="flex items-center gap-x-2 mb-2"><i class="fa-solid fa-check text-emerald-600"></i> <span>Digital planner + weekly review</span></div>
+                    <div class="flex items-center gap-x-2"><i class="fa-solid fa-check text-emerald-600"></i> <span>Email support</span></div>
+                </div>
+                <button onclick="document.getElementById('waitlist').scrollIntoView({ behavior: 'smooth' })" 
+                        class="mt-8 w-full h-12 rounded-3xl border border-stone-300 hover:bg-stone-50 font-semibold transition-colors">
+                    Get started
+                </button>
+            </div>
+            
+            <!-- Focus -->
+            <div class="bg-white border-2 border-teal-900 rounded-3xl p-8 relative">
+                <div class="absolute -top-3 right-8 bg-teal-900 text-white text-xs font-bold px-4 h-6 flex items-center rounded-3xl">Most popular</div>
+                <div>
+                    <span class="font-semibold">Focus Kit</span>
+                </div>
+                <div class="mt-6">
+                    <span class="text-5xl font-semibold tracking-tighter">$119</span>
+                    <span class="text-stone-500">/one-time</span>
+                </div>
+                <div class="mt-7 text-sm text-stone-600">
+                    <div class="flex items-center gap-x-2 mb-2"><i class="fa-solid fa-check text-emerald-600"></i> <span>Everything in Starter</span></div>
+                    <div class="flex items-center gap-x-2 mb-2"><i class="fa-solid fa-check text-emerald-600"></i> <span>Physical printed kit shipped</span></div>
+                    <div class="flex items-center gap-x-2 mb-2"><i class="fa-solid fa-check text-emerald-600"></i> <span>90-day AI adaptation</span></div>
+                    <div class="flex items-center gap-x-2"><i class="fa-solid fa-check text-emerald-600"></i> <span>Priority support</span></div>
+                </div>
+                <button onclick="document.getElementById('waitlist').scrollIntoView({ behavior: 'smooth' })" 
+                        class="mt-8 w-full h-12 rounded-3xl bg-teal-900 hover:bg-teal-950 text-white font-semibold transition-colors">
+                    Join waitlist
+                </button>
+            </div>
+            
+            <!-- Deep Work -->
+            <div class="bg-white border border-stone-200 rounded-3xl p-8">
+                <div>
+                    <span class="font-semibold">Deep Work Kit</span>
+                </div>
+                <div class="mt-6">
+                    <span class="text-5xl font-semibold tracking-tighter">$229</span>
+                    <span class="text-stone-500">/one-time</span>
+                </div>
+                <div class="mt-7 text-sm text-stone-600">
+                    <div class="flex items-center gap-x-2 mb-2"><i class="fa-solid fa-check text-emerald-600"></i> <span>Everything in Focus</span></div>
+                    <div class="flex items-center gap-x-2 mb-2"><i class="fa-solid fa-check text-emerald-600"></i> <span>1:1 onboarding call</span></div>
+                    <div class="flex items-center gap-x-2"><i class="fa-solid fa-check text-emerald-600"></i> <span>Lifetime updates</span></div>
+                </div>
+                <button onclick="document.getElementById('waitlist').scrollIntoView({ behavior: 'smooth' })" 
+                        class="mt-8 w-full h-12 rounded-3xl border border-stone-300 hover:bg-stone-50 font-semibold transition-colors">
+                    Get started
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WAITLIST FORM -->
+    <div id="waitlist" class="max-w-screen-xl mx-auto px-8 py-16 bg-white border-y border-stone-200">
+        <div class="max-w-md mx-auto text-center">
+            <h2 class="text-4xl tracking-tighter font-semibold">Be the first to receive your kit.</h2>
+            <p class="mt-3 text-stone-600">Limited early access spots available. We'll send your kit within 48 hours of launch.</p>
+            
+            <form action="https://api.repryntt.com/v1/company/co_02f66ccdb71b4c61/lead" method="POST" class="mt-8">
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <input type="email" name="email" required 
+                           class="flex-1 h-14 px-6 border border-stone-300 focus:border-teal-800 transition-colors rounded-3xl text-lg placeholder:text-stone-400"
+                           placeholder="your@business.com">
+                    <button type="submit" 
+                            class="h-14 px-9 bg-teal-900 hover:bg-teal-950 transition-colors text-white font-semibold rounded-3xl whitespace-nowrap">
+                        Reserve my spot
+                    </button>
+                </div>
+                <p class="text-xs text-stone-500 mt-3">No spam. Unsubscribe anytime.</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div id="faq" class="max-w-screen-xl mx-auto px-8 py-20">
+        <div class="max-w-xl mb-10">
+            <h2 class="section-header tracking-tighter">Common questions.</h2>
+        </div>
+        
+        <div class="max-w-3xl space-y-4">
+            <div class="border border-stone-200 rounded-3xl px-7 py-6">
+                <div class="font-semibold">How are the kits different from regular planners?</div>
+                <div class="mt-2 text-stone-600 text-[15px]">Every element is generated by AI based on your actual business model, energy patterns, and goals — not generic templates.</div>
+            </div>
+            <div class="border border-stone-200 rounded-3xl px-7 py-6">
+                <div class="font-semibold">Do I get physical products?</div>
+                <div class="mt-2 text-stone-600 text-[15px]">Yes. The Focus and Deep Work kits include beautifully printed materials shipped to your door.</div>
+            </div>
+            <div class="border border-stone-200 rounded-3xl px-7 py-6">
+                <div class="font-semibold">How often will my kit update?</div>
+                <div class="mt-2 text-stone-600 text-[15px]">Focus Kit members receive quarterly AI updates based on how your business evolves.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-stone-200">
+        <div class="max-w-screen-xl mx-auto px-8 py-10">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-y-4 text-sm">
+                <div class="flex items-center gap-x-2 text-stone-500">
+                    <span>© 2025 Buyora</span>
+                </div>
+                <div class="flex items-center gap-x-6 text-stone-500">
+                    <a href="#" class="hover:text-stone-700">Privacy</a>
+                    <a href="#" class="hover:text-stone-700">Terms</a>
+                    <a href="#" class="hover:text-stone-700">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
